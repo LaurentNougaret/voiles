@@ -1,0 +1,16 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /les_voiles_du_bien-etre/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /les_voiles_du_bien-etre/index.php [L]
+</IfModule>
+php_value upload_max_filesize 200M
+php_value post_max_size 200M
+php_value max_execution_time 2000
+php_value max_input_time 2000
+
+# END WordPress
