@@ -29,7 +29,7 @@ Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, 
 }
 
 *{ margin:0; padding:0; outline:none;}
-body{ margin:0; padding:0; -ms-word-wrap:break-word; word-wrap:break-word; background-color:#fff; position:relative; font:14px/24px 'Raleway' !important; color:#fff; }
+body{ margin:0; padding:0; -ms-word-wrap:break-word; word-wrap:break-word; background-color:#fff; position:relative; font:18px/24px 'Raleway' !important; color:#fff; }
 img{ margin:0; padding:0; border:none; max-width:100%; height:auto; }
 section img{max-width:100%;}
 h1,h2,h3,h4,h5,h6{ margin:0; padding:0 0 15px;}
@@ -71,7 +71,7 @@ a.read-more:hover{ background-color:#222222; color:#ffffff;}
 .main-container{margin:0; padding:0;}
 
 /** Header **/
-#header { width:100%; }
+#header { width:100%; background-color: #fff; color: #ffA500; }
 .logo h1 { padding-bottom:0; padding:10px 0 0; font:bold 45px allura;}
 .logo a, .logo a:hover, .logo p{text-transform: capitalize; color:#ffffff;}
 .toggle{display:none;}
@@ -91,14 +91,14 @@ a.read-more:hover{ background-color:#222222; color:#ffffff;}
 }
 
 /* --------- Pages ------- */
-.content-area{ width:1160px; margin:0 auto; padding:50px 0;}
-.site-main{ width:800px; margin:0; padding:0; float:left;}
+.content-area{ width:75%; margin:0 auto; padding:50px 0; text-align: justify}
+.site-main{ width:100%; margin:0; padding:0; float:left;}
 #sitefull{ width:auto !important;}
 #nosidebar{ width:80%; margin:0 auto; float:none; text-align:center;}
 #sidebar{ width:270px; margin:0; padding:0; float:right;}
 
 /*copyright css*/
-.copyright-wrapper { position:relative; padding:20px 0; background-color:#FFA500; color:#ffffff;}
+.copyright-wrapper { position:relative; padding:20px 0; background-color:#fff; color:#FFA500;}
 .copyright-wrapper .inner{width:10%; margin: auto;}
 .footer-menu{ float:left; margin:0; padding:0; color:#ffffff;}
 .copyright ul li, .footer-menu ul li{ display:inline-block; margin:0; padding:0 10px 0 0;}
