@@ -12,13 +12,8 @@ Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, 
 
 */
 
-@font-face{
-	font-family :DroidSansMono;
-	src: url(fonts/DroidSansMono.ttf);	
-}
-@font-face{
-	font-family : 'Raleway', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans|Raleway|Roboto');
+
 @font-face{
 	font-family :Damion;
 	src: url(fonts/Damion-Regular.ttf);	
@@ -27,9 +22,10 @@ Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, 
 	font-family :Allura;
 	src: url(fonts/Allura-Regular.ttf);	
 }
-
+html {background-image: url("D:\Wamp64\www\les_voiles_du_bien-etre\wp-content\uploads\2018\03\IMG_5019-ConvertImage.jpg");
+}
 *{ margin:0; padding:0; outline:none;}
-body{ margin:0; padding:0; -ms-word-wrap:break-word; word-wrap:break-word; background-color:#fff; position:relative; font:18px/24px 'Raleway' !important; color:#fff; }
+body{ min-height: 100%; margin:0; padding:0; -ms-word-wrap:break-word; word-wrap:break-word; background-color:#fff; position:relative; font:18px/24px 'Raleway' !important; color:#fff; }
 img{ margin:0; padding:0; border:none; max-width:100%; height:auto; }
 section img{max-width:100%;}
 h1,h2,h3,h4,h5,h6{ margin:0; padding:0 0 15px;}
@@ -59,11 +55,11 @@ h2.section-title { font-family:'Oswald'; font-size:50px; font-weight:700; paddin
 .section-subtitle { padding:0 0 15px 0; text-align:center; display:table; margin-bottom:50px; width:100%;}
 #slider{ max-width:1400px; margin:0 auto; padding:0; position:relative;}
 #slider .top-bar{ margin:0; padding:16px 0 20px; position:relative; text-align: center;}
-#slider .top-bar h4{ font:700 35px 'Lato' !important; text-align:center; text-transform:uppercase;}
+#slider .top-bar h4{ font:700 35px 'Raleway' !important; text-align:center; text-transform:uppercase;}
 #slider .top-bar p{ color:#ffffff; font-weight:400; margin:0 0 10px 0; line-height:20px; padding-bottom:15px; padding-left:25px; border-radius:0 0 5px 5px; font:12px/20px arial; background-color:rgba(0,0,0,0.5);}
 #slider .top-bar .desc{ border-radius:5px 5px 0 0; padding:20px 20px; background-color:rgba(0,0,0,0.5);}
 
-a.blog-more{ display:inline-block; font:700 20px 'Lato', sans-serif; padding:10px 30px; margin-top:21px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -o-border-radius:4px; -ms-border-radius:4px; margin-right:15px;}
+a.blog-more{ display:inline-block; font:700 20px 'Raleway', sans-serif; padding:10px 30px; margin-top:21px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -o-border-radius:4px; -ms-border-radius:4px; margin-right:15px;}
 a.read-more { padding:10px 30px; margin-top:21px; display:inline-block; font:700 20px 'Lato', sans-serif; position:relative; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; -o-border-radius:20px; -ms-border-radius:20px; text-transform:uppercase; color:#ffffff; border:2px solid #ffffff;}
 .nivi-caption .read-more { width: 30%; display: block; }
 
@@ -71,14 +67,14 @@ a.read-more:hover{ background-color:#222222; color:#ffffff;}
 .main-container{margin:0; padding:0;}
 
 /** Header **/
-#header { width:100%; background-color: #fff; color: #ffA500; }
+#header { width:100%; background-color: #fff; color: #7d4d23!important; }
 .logo h1 { padding-bottom:0; padding:10px 0 0; font:bold 45px allura;}
 .logo a, .logo a:hover, .logo p{text-transform: capitalize; color:#ffffff;}
 .toggle{display:none;}
 .logo > p {font-family: damion;font-size: 18px;}
 
 @media screen and (min-width:1000px){
-	.main-nav ul { margin:0; padding:0; float:right; font:400 17px 'Lato';}
+	.main-nav ul { margin:0; padding:0; float:right; font:400 17px 'Lora';}
 	.main-nav ul li { list-style:none; display:inline-block;  position:relative;padding: 40px 0;}
 	.main-nav ul li a { text-decoration:none; padding:35px 13px; text-transform:uppercase; color:#ffffff;font-weight:bold; }
 	.main-nav ul li a:hover { border-top:6px solid #fff; text-decoration:none; padding:30px 13px; }
@@ -92,14 +88,14 @@ a.read-more:hover{ background-color:#222222; color:#ffffff;}
 
 /* --------- Pages ------- */
 .content-area{ width:75%; margin:0 auto; padding:50px 0; text-align: justify}
-.site-main{ width:100%; margin:0; padding:0; float:left;}
+.site-main{ width:100%; margin:0; padding:0; justify-content: center}
 #sitefull{ width:auto !important;}
 #nosidebar{ width:80%; margin:0 auto; float:none; text-align:center;}
 #sidebar{ width:270px; margin:0; padding:0; float:right;}
 
 /*copyright css*/
 .copyright-wrapper { position:relative; padding:20px 0; background-color:#fff; color:#FFA500;}
-.copyright-wrapper .inner{width:10%; margin: auto;}
+.copyright-wrapper .inner{width:20%; margin: auto;}
 .footer-menu{ float:left; margin:0; padding:0; color:#ffffff;}
 .copyright ul li, .footer-menu ul li{ display:inline-block; margin:0; padding:0 10px 0 0;}
 .footer-menu ul ul{ display:none;}

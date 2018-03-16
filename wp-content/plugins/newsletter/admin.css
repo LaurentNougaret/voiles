@@ -13,6 +13,13 @@
     box-sizing: border-box;
 }
 
+/* Color picker patch */
+#tnp-wrap .iris-picker, #tnp-wrap .iris-picker * {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
 #tnp-wrap *:before,
 #tnp-wrap *:after {
     -webkit-box-sizing: border-box;
@@ -207,6 +214,7 @@
     color: #fff;
     background-color: #3498db;
     text-shadow: none;
+    width: auto;
 }
 
 /* Icon in button media selector */
@@ -227,6 +235,7 @@
     background-color: #fff!important;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
+    width: auto;
 }
 
 /* Form tables correction */
@@ -358,6 +367,7 @@
 #tnp-body #tabs .button-secondary:visited, 
 #tnp-body #tabs .button-secondary:hover {
     color: #fff;
+    width: auto;
 }
 
 table.clicks td {
@@ -702,6 +712,7 @@ p.description {
 .wp-core-ui .button-primary {
     background-color: #2b2f3a;
     color: #fff;
+    width: auto;
 }
 
 
@@ -1010,18 +1021,20 @@ p.description {
     background-color: #ECF0F1;
 }
 
-.wp-core-ui .button-secondary, .wp-core-ui .button, .wp-core-ui .button-primary {
+.wp-core-ui .button-secondary, .wp-core-ui .button-primary {
     background-color: #3498db;
     border: none;
     box-shadow: none;
     color: #fff;
     font-family: 'Montserrat',sans-serif;
     margin: 0px 2px;
+    width: auto;
 }
 
 .wp-core-ui .button-secondary:hover, .wp-core-ui .button:hover, .wp-core-ui .button-primary:hover {
     background-color: #5DADE2;
     color: #fff;
+    width: auto;
 }
 
 span.wp-media-buttons-icon:before {

@@ -14,32 +14,13 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans|Raleway|Roboto" rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <?php wp_head(); ?>
 
 </head>
 
 <body <?php body_class(); ?>>
-		<div id="header">
-            <div class="container">	
-				<div class="row">
-						<div class="logo">
-							<?php delight_spa_the_custom_logo(); ?>
-						<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_attr(bloginfo( 'name' )); ?></a></h1>
-
-					<?php $description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p><?php echo $description; ?></p>
-					<?php endif; ?>
-						</div>
-						<div class="toggle">
-							<a class="toggleMenu" href="#"><?php _e('Menu','delight-spa'); ?></a>
-						</div> 
-						<div class="main-nav">
-							<?php wp_nav_menu( array('theme_location'  => 'primary') ); ?>							
-						</div>			
-				</div><!--row-->
-            </div><!--container-->               
-		</div><!-- header -->
+		
 		
 <?php if ( is_front_page() && !is_home() ) { ?>
 	<?php $hideslide = get_theme_mod('hide_slider', '0'); ?>
@@ -95,6 +76,27 @@
 <?php } } } ?>
 
       <div class="main-container">
+	  <div id="header">
+            <div class="container">	
+				<div class="row">
+						<div class="logo">
+							<?php delight_spa_the_custom_logo(); ?>
+						<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_attr(bloginfo( 'name' )); ?></a></h1>
+
+					<?php $description = get_bloginfo( 'description', 'display' );
+					if ( $description || is_customize_preview() ) : ?>
+						<p><?php echo $description; ?></p>
+					<?php endif; ?>
+						</div>
+						<div class="toggle">
+							<a class="toggleMenu" href="#"><?php _e('Menu','delight-spa'); ?></a>
+						</div> 
+						<div class="main-nav">
+							<?php wp_nav_menu( array('theme_location'  => 'primary') ); ?>							
+						</div>			
+				</div><!--row-->
+            </div><!--container-->               
+		</div><!-- header -->
          <?php if( function_exists('is_woocommerce') && is_woocommerce() ) { ?>
 		 	<div class="content-area">
                 <div class="middle-align content_sidebar">
